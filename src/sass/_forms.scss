@@ -1,0 +1,83 @@
+.form {
+    display: none;
+
+    &.active {
+        display: block;
+    }
+
+    &-group {
+        padding-top: 37px;
+
+        label  {
+            font-family: $font-roboto;
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 95.7%;
+            text-transform: uppercase;
+            color: $color-black-100;
+            display: block;
+            line-height: 1.98;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 15px 20px;
+            border: 1px solid $color-grey-100;
+            border-radius: 10px;
+            font-family: $font-roboto;
+            font-size: 14px;
+            color: $color-black-100;
+            outline: none;
+        }
+
+        &-wrapper {
+            display: flex;
+            margin-left: -15px;
+            margin-right: -15px;
+
+            @media(max-width:500px){
+                display: block;
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .form-group {
+                margin: 0 15px;
+                width: 100%;
+
+                @media(max-width:500px){
+                    margin: 0;
+                }
+            }
+        }
+        &.has-danger{
+            input{
+                background-color: rgba(255,0,0, 0.2) !important;
+                border-color: #f00 !important;
+            }
+        }
+    }
+}
+
+input:not([type=checkbox]):focus,
+input:not([type=radio]):focus{ 
+    border-color: $color-orange;
+}
+
+.submit-group {
+    padding-top: 39px;
+
+    @media(max-width:414px){
+        text-align: center;
+    }
+}
+
+input.error {
+    background-color:rgba(255,0,0, 0.2)!important; 
+    border-color: #f00 !important;
+}
+
+small.required {
+    color:#f00;
+}

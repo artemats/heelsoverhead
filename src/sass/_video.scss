@@ -1,0 +1,12 @@
+.video{
+  padding: 70px 0;
+  margin: 0 auto;
+  max-width: 560px;
+    &-box{
+      height: 700px;
+      //pointer-events: none;
+        @media (max-width: 620px) {
+          height: 113vw;
+        }
+    }
+}
