@@ -1,8 +1,8 @@
 const gift = document.querySelector('.gift');
-const giftTop = gift.querySelector('.image-top');
 
-if(!!gift && !!giftTop) {
+if(!!gift) {
 
+    const giftTop = gift.querySelector('.image-top');
     const wHeight = window.innerHeight;
 
     window.addEventListener('scroll', function () {

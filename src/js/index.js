@@ -39,9 +39,12 @@ for(let i = 0; i < scrollLinks.length; i++) {
 
 // close modal //
 const closeModalBtn = document.querySelector('.close-btn');
+const modals = document.querySelectorAll('.payment-page-pop-up');
 if(!!closeModalBtn) {
     closeModalBtn.addEventListener('click', function () {
-        document.querySelector('.payment-page-pop-up').classList.remove('open');
+        for(let i = 0; i < modals.length; i++) {
+            modals[i].classList.remove('open');
+        }
     });
 }
 
