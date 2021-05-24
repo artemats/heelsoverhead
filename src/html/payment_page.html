@@ -55,17 +55,19 @@
                             </button>
                         </div>
                         <!-- coupon -->
-                        <div class="coupon">
-                            <div class="form-group">
-                                <label for="coupon">Coupon</label>
-                                <input type="email" id="coupon" name="coupon">
+                        <form id="coupon-form">
+                            <div class="coupon">
+                                <div class="form-group">
+                                    <label for="coupon">Coupon</label>
+                                    <input type="text" id="coupon" name="coupon" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="Human">Human</label>
+                                    <input type="password" id="Human" name="human">
+                                </div>
+                                <button class="btn btn-orange">Apply coupon</button>
                             </div>
-                            <div class="form-group">
-                                <label for="Human">Human</label>
-                                <input type="password" id="Human" name="Human" required>
-                            </div>
-                            <button class="btn btn-orange">Apply coupon</button>
-                        </div>
+                        </form>
                         <!-- Paypal -->
                         <div class="form active"  data-target="#tab-1" id="form_1">
                             <div class="submit-group">
