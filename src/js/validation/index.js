@@ -1,17 +1,11 @@
-import Pristine from 'pristinejs/dist/pristine';
+// import Pristine from 'pristinejs/dist/pristine';
 
 // subscription //
-const subscriptionForm = document.querySelector('#form_5');
-export let subscription;
-if(!!subscriptionForm) {
-    subscription = new Pristine(subscriptionForm);
-}
-
-console.log(subscription);
-
-export function isSubscriptionValid() {
-    return subscription;
-}
+// const subscriptionForm = document.querySelector('#form_5');
+// export let subscription;
+// if(!!subscriptionForm) {
+//     subscription = new Pristine(subscriptionForm);
+// }
 
 // subscriptionForm.addEventListener('submit', function (event) {
 //     event.preventDefault();
@@ -20,18 +14,14 @@ export function isSubscriptionValid() {
 // });
 
 // coupon //
-const couponForm = document.querySelector('#coupon-form');
-export let coupon;
-if(!!couponForm) {
-    coupon = new Pristine(couponForm);
-}
+// const couponForm = document.querySelector('#coupon-form');
+// export let coupon;
+// if(!!couponForm) {
+//     coupon = new Pristine(couponForm);
+// }
 
 // couponForm.addEventListener('submit', function (event) {
 //     event.preventDefault();
 //     let isCouponValid = coupon.validate();
 //     console.log(isCouponValid);
 // });
-
-export function isCouponValid() {
-    return coupon;
-}

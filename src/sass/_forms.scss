@@ -1,10 +1,8 @@
 .form {
     display: none;
-
     &.active {
         display: block;
     }
-
     &-group {
         padding-top: 37px;
         position: relative;
@@ -65,6 +63,15 @@
             }
         }
     }
+    &-message{
+        font-size: 12px;
+        padding-top: 10px;
+        padding-left: 5px;
+        display: none;
+            p{
+                margin: 0;
+            }
+    }
 }
 
 input:not([type=checkbox]):focus,
@@ -87,4 +94,16 @@ input.error {
 
 small.required {
     color:#f00;
+}
+
+.StripeElement{
+    width: 100%;
+    padding: 0 20px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #181818;
+    outline: none;
+    height: 48px;
 }

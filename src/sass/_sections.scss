@@ -646,7 +646,6 @@
         }
         
     }
-
     &-timer-wrapper {
         justify-content: flex-start;
         padding: 9px 0 0 170px;
@@ -672,13 +671,12 @@
             color: $color-orange;
         }
     }
-
     &-wrapper {
         background-color: $color-black-100;
         margin-top: 35px;
 
         &-inner {
-            padding: 0 55px 54px 0;
+            padding: 50px 55px 54px 0;
 
             @media (max-width:1200px){
                 padding: 0 30px 30px 0;
@@ -722,6 +720,12 @@
                         left: 0;
                     }
             }
+        }
+        .btn-lg{
+            max-width: 100%;
+        }
+        .form-message{
+            color: $color-white;
         }
     }
 
@@ -804,7 +808,7 @@
 
     input {
         width: 100%;
-        max-width: 270px;
+        //max-width: 270px;
         padding: 15px 24px;
         border: 1px solid $color-white;
         border-radius: 10px;
@@ -822,4 +826,8 @@
 }
 .colon:before {
     content: ":";
+}
+
+#paypal-payment-button{
+    max-width: 300px;
 }
