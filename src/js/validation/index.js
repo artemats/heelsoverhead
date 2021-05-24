@@ -7,6 +7,8 @@ if(!!subscriptionForm) {
     subscription = new Pristine(subscriptionForm);
 }
 
+console.log(subscription);
+
 export function isSubscriptionValid() {
     return subscription;
 }
