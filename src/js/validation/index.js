@@ -2,7 +2,7 @@ import pristine from 'pristinejs/dist/pristine';
 
 // subscription //
 const subscriptionForm = document.querySelector('#form_5');
-let subscription;
+export let subscription;
 if(!!subscriptionForm) {
     subscription = new pristine(subscriptionForm);
 }
@@ -15,7 +15,7 @@ if(!!subscriptionForm) {
 
 // coupon //
 const couponForm = document.querySelector('#coupon-form');
-let coupon;
+export let coupon;
 if(!!couponForm) {
     coupon = new pristine(couponForm);
 }
