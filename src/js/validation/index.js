@@ -1,10 +1,14 @@
-import pristine from 'pristinejs/dist/pristine';
+import Pristine from 'pristinejs/dist/pristine';
 
 // subscription //
 const subscriptionForm = document.querySelector('#form_5');
 export let subscription;
 if(!!subscriptionForm) {
-    subscription = new pristine(subscriptionForm);
+    subscription = new Pristine(subscriptionForm);
+}
+
+export function isSubscriptionValid() {
+    return subscription;
 }
 
 // subscriptionForm.addEventListener('submit', function (event) {
@@ -17,7 +21,7 @@ if(!!subscriptionForm) {
 const couponForm = document.querySelector('#coupon-form');
 export let coupon;
 if(!!couponForm) {
-    coupon = new pristine(couponForm);
+    coupon = new Pristine(couponForm);
 }
 
 // couponForm.addEventListener('submit', function (event) {
