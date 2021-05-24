@@ -29,3 +29,7 @@ if(!!couponForm) {
 //     let isCouponValid = coupon.validate();
 //     console.log(isCouponValid);
 // });
+
+export function isCouponValid() {
+    return coupon;
+}
