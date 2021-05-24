@@ -415,9 +415,7 @@
 }
 
 .data {
-
     &-item {
-
         &-image {
             height: 545px;
             width: 900px;
@@ -489,6 +487,20 @@
             }
         }
     }
+}
+
+.image-top{
+    position: absolute;
+    top: 135px;
+    left: 0;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+        @media (max-width: 765px) {
+            width: 100%;
+            top: 100px;
+        }
 }
 
 .box-item {
@@ -704,13 +716,11 @@
                     input{
                         color: $color-white;
                     }
-            }
-            .text-help{
-                position: absolute;
-                color: $color-white;
-                font-size: 12px;
-                bottom: 4px;
-                left: 0;
+                    .text-help{
+                        color: $color-white;
+                        bottom: 4px;
+                        left: 0;
+                    }
             }
         }
     }

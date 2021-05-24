@@ -134,16 +134,16 @@
                 max-width: 56px;
                 height: 23px;
             }
-            @media (max-width: 500px) {
-                width: 70px;
-            }
-            @media (max-width: 360px) {
-                width: 57px;
-                img {
-                    width: auto;
-                    max-width: 40px;
-                }
-            }
+            //@media (max-width: 500px) {
+            //    width: 70px;
+            //}
+            //@media (max-width: 360px) {
+            //    width: 57px;
+            //    img {
+            //        width: auto;
+            //        max-width: 40px;
+            //    }
+            //}
             &:hover,
             &.active {
                 border-color: $color-orange;

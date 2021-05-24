@@ -4,6 +4,7 @@ import './subscribeCheckboxes/index';
 import './countdownTimer/index';
 import './payment/switcher';
 import './validation/index';
+import './gift-parallax/index';
 
 // init scroll to elements on click //
 const scrollLinks = document.querySelectorAll('.scroll-to');
