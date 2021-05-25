@@ -5,6 +5,8 @@ import './countdownTimer/index';
 import './payment/switcher';
 import './validation/index';
 import './gift-parallax/index';
+import './videoToggle/index';
+import {getSubscriberData} from "./subscriberData";
 
 // init scroll to elements on click //
 const scrollLinks = document.querySelectorAll('.scroll-to');
@@ -31,3 +33,5 @@ if(!!closeModalBtn) {
         }
     });
 }
+
+// console.log(getSubscriberData('Arte', 'arte@gmail.com', 'Vegan, Gluten free', ['Pay']));

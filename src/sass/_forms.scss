@@ -66,8 +66,13 @@
     &-message{
         font-size: 12px;
         padding-top: 10px;
-        padding-left: 5px;
         display: none;
+            &.success{
+                color: green;
+            }
+            &.error{
+                color: #ff0000;
+            }
             p{
                 margin: 0;
             }

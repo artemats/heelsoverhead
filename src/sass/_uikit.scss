@@ -112,7 +112,7 @@ h4 {
     border: 1px solid;
     border-radius: 10px;
     outline: none;
-    padding: 15px;
+    padding: 0 15px;
     font-size: 12px;
     text-align: center;
     font-family: $font-roboto;
@@ -123,33 +123,36 @@ h4 {
     transition: 0.3s;
     text-decoration: none;
     letter-spacing: 0.2px;
-
-    &-sm {
-        min-width: 160px;
-
-        @media (max-width:414px){
-            min-width: 100%;
-            margin-bottom: 15px;
-        }
-    }
-
-    &-md {
-        padding: 17px 64px;
-
-        @media (max-width:414px){
-            width: 100%;
-        }
-        
-    }
-
-    &-lg {
-        max-width: 270px;
-        width: 100%;
-
-        @media (max-width:414px){
-            max-width: 100%;
-        }
-    }
+    height: 48px;
+    line-height: 48px;
+    max-width: 160px;
+    width: 100%;
+    //&-sm {
+    //    min-width: 160px;
+    //
+    //    @media (max-width:414px){
+    //        min-width: 100%;
+    //        margin-bottom: 15px;
+    //    }
+    //}
+    //
+    //&-md {
+    //    padding: 17px 64px;
+    //
+    //    @media (max-width:414px){
+    //        width: 100%;
+    //    }
+    //
+    //}
+    //
+    //&-lg {
+    //    max-width: 270px;
+    //    width: 100%;
+    //
+    //    @media (max-width:414px){
+    //        max-width: 100%;
+    //    }
+    //}
 
     &-cancel {
         font-family: $font-roboto;

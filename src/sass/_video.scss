@@ -5,6 +5,10 @@
     &-box{
       height: 700px;
       //pointer-events: none;
+        #player{
+          height: 100%;
+          pointer-events: none;
+        }
         @media (max-width: 620px) {
           height: 113vw;
         }
