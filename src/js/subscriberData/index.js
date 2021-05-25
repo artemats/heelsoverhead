@@ -17,11 +17,12 @@ export function getSubscriberData(name, email, diet, tags) {
                     }
                 }
             }
-        ],
-        "customProperties": {
-            "Diet": diet || ""
-        }
+        ]
     };
 
-    return JSON.stringify(data);
+    if(!!diet) {
+        data.customProperties = { Diet: "Vegan, Name diet" }
+    }
+
+    return data;
 }

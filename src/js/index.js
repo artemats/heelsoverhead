@@ -34,4 +34,4 @@ if(!!closeModalBtn) {
     });
 }
 
-// console.log(getSubscriberData('Arte', 'arte@gmail.com', 'Vegan, Gluten free', ['Pay']));
+console.log(getSubscriberData('Arte', 'arte@gmail.com', 'Vegan, Gluten free', ['Pay']));
