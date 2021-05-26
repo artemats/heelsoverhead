@@ -6,7 +6,7 @@
 // if(!!subscriptionForm) {
 //     subscription = new Pristine(subscriptionForm);
 // }
-
+//
 // subscriptionForm.addEventListener('submit', function (event) {
 //     event.preventDefault();
 //     let isSubscriptionValid = subscription.validate();
@@ -19,7 +19,7 @@
 // if(!!couponForm) {
 //     coupon = new Pristine(couponForm);
 // }
-
+//
 // couponForm.addEventListener('submit', function (event) {
 //     event.preventDefault();
 //     let isCouponValid = coupon.validate();

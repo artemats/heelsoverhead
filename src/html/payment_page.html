@@ -23,95 +23,94 @@
 </head>
 
 <body>
-    <div class="payment-page">
-        <div class="container">
-            <div class="header">
-                <a href="/" class="header-logo">
-                    <img src="../img/logo.svg" alt="">
-                </a>
-            </div>
-        </div>
-
-        <div class="payment-page-img">
-            <img src="../img/image_14.jpg" alt="" />
-        </div>
-        <div class="payment-page-wrapper">
-            <div class="payment-page-container">
-                <div class="payment-page-content">
-                    <div class="payment-page-title">
-                        Choose your payment method
+<div class="header">
+    <div class="container">
+        <a href="/" class="header-logo">
+            <img src="../img/logo.svg" alt="">
+        </a>
+    </div>
+</div>
+<div class="payment-page">
+    <div class="payment-page-img">
+        <img src="../img/image_14.jpg" alt="" />
+    </div>
+    <div class="payment-page-wrapper">
+        <div class="payment-page-container">
+            <div class="payment-page-content">
+                <div class="payment-page-title">
+                    Choose your payment method
+                </div>
+                <div class="payment-tab">
+                    <div class="payment-tab-title">
+                        We Accept:
                     </div>
-                    <div class="payment-tab">
-                        <div class="payment-tab-title">
-                            We Accept:
-                        </div>
-                        <div class="payment-tab-body">
-                            <button type="button" class="payment-tab-item active" id="tab-1">
-                                <img src="../img/icon_10.svg" alt="">
-                            </button>
-                            <button type="button" class="payment-tab-item" id="tab-2">
-                                <img src="../img/icon_11.svg" alt="">
-                            </button>
-                        </div>
-                        <!-- coupon -->
-                        <form id="coupon-form">
-                            <div class="coupon">
-                                <div class="form-group">
-                                    <label for="coupon">Coupon</label>
-                                    <input type="text" id="coupon" name="coupon" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="Human">Human</label>
-                                    <input type="password" id="Human" name="human">
-                                </div>
-                                <button class="btn btn-orange">Apply coupon</button>
-                            </div>
-                            <div class="form-message">
-                                <p>Success message</p>
-                            </div>
-                        </form>
-                        <!-- Paypal -->
-                        <div class="form active"  data-target="#tab-1" id="form_1">
-                            <div id="paypal-payment-button">
-                                <button type="submit" class="btn btn-md btn-orange">
-                                    Paypal
-                                </button>
-                            </div>
-                        </div>
-                        <!-- Stripe -->
-                        <form class="form"  data-target="#tab-2" id="form_2">
+                    <div class="payment-tab-body">
+                        <button type="button" class="payment-tab-item active" id="tab-1">
+                            <img src="../img/icon_10.svg" alt="">
+                        </button>
+                        <button type="button" class="payment-tab-item" id="tab-2">
+                            <img src="../img/icon_11.svg" alt="">
+                        </button>
+                    </div>
+                    <!-- coupon -->
+                    <form id="coupon-form">
+                        <div class="coupon">
                             <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" required="" class="">
+                                <label for="coupon">Coupon</label>
+                                <input type="text" id="coupon" name="coupon" required>
                             </div>
                             <div class="form-group">
-                                <label for="card2">Card Number</label>
-                                <input type="text" id="card2" name="card2" required>
+                                <label for="Human">Human</label>
+                                <input type="password" id="Human" name="human">
                             </div>
-                            <div class="form-group-wrapper">
-                                <div class="form-group">
-                                    <label for="expiryDate2">Expiry Date</label>
-                                    <input type="text" id="expiryDate2" name="expiryDate2" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="cvv2">Cvv</label>
-                                    <input type="text" id="cvv2" name="cvv2" maxlength="3" required>
-                                </div>
-                            </div>
-                            <div class="submit-group">
-                                <button type="submit" class="btn btn-md btn-orange">
-                                    Pay $21.00
-                                </button>
-                                <button type="button" class="btn btn-cancel js-clear-form">
-                                    Cancel
-                                </button>
-                            </div>
-                        </form>
+                            <button class="btn btn-orange">Apply coupon</button>
+                        </div>
+                        <div class="form-message">
+                            <p>Success message</p>
+                        </div>
+                    </form>
+                    <!-- Paypal -->
+                    <div class="form active"  data-target="#tab-1" id="form_1">
+                        <div id="paypal-payment-button">
+                            <button type="submit" class="btn btn-md btn-orange">
+                                Paypal
+                            </button>
+                        </div>
                     </div>
+                    <!-- Stripe -->
+                    <form class="form"  data-target="#tab-2" id="form_2">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required="" class="">
+                        </div>
+                        <div class="form-group">
+                            <label for="card2">Card Number</label>
+                            <input type="text" id="card2" name="card2" required>
+                        </div>
+                        <div class="form-group-wrapper">
+                            <div class="form-group">
+                                <label for="expiryDate2">Expiry Date</label>
+                                <input type="text" id="expiryDate2" name="expiryDate2" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cvv2">Cvv</label>
+                                <input type="text" id="cvv2" name="cvv2" maxlength="3" required>
+                            </div>
+                        </div>
+                        <div class="submit-group">
+                            <button type="submit" class="btn btn-md btn-orange">
+                                Pay $21.00
+                            </button>
+                            <button type="button" class="btn btn-cancel js-clear-form">
+                                Cancel
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
+</div>
 <!--    <div class="payment-page-pop-up open">-->
     <div class="payment-page-pop-up">
         <div class="pop-up-content">

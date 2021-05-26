@@ -73,9 +73,23 @@
 
     &-wrapper {
         padding: 160px 0;
-        @media (max-width: 823px) {
-            padding: 40px 0;
-        }
+            &.__success{
+                .payment-page-title{
+                    color: $color-orange;
+                    padding-bottom: 15px;
+                        h2{
+                            color: inherit;
+                        }
+                }
+                @media (min-width: 768px) {
+                    min-height: 100vh;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            @media (max-width: 823px) {
+                padding: 40px 0;
+            }
     }
 
     &-title {
@@ -88,7 +102,13 @@
             line-height: 1.3;
         }
     }
-
+    &-description{
+        max-width: 432px;
+        margin-bottom: 30px;
+            p{
+                margin: 0;
+            }
+    }
     &-pop-up {
         background-color: rgba(38, 38, 38, 0.7);
         position: fixed;

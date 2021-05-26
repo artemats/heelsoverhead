@@ -121,6 +121,13 @@ module.exports = {
             minify: {
                 collapseWhitespace: false
             },
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'payment_success.html',
+            template: path.resolve(__dirname, 'src/html', 'payment_success.html'),
+            minify: {
+                collapseWhitespace: false
+            },
         })
     ],
     mode: 'production',
