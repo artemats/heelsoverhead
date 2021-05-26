@@ -486,13 +486,14 @@
 
 .data {
     &-item {
+        overflow-x: visible;
         &-image {
             height: 545px;
             width: 900px;
             position: absolute;
             bottom: 50px;
             right: 0;
-
+            z-index: 5;
             @media (max-width: 1280px) {
                 height: 545px;
                 width: 650px;
@@ -556,6 +557,9 @@
                 line-height: 1.8;
             }
         }
+    }
+    &-wrapper{
+        overflow-x: visible;
     }
 }
 
