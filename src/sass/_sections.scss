@@ -797,12 +797,6 @@
                         color: $color-white;
                         -webkit-box-shadow: inset 0 0 0 50px #181818;
                         -webkit-text-fill-color: #ffffff;
-                        &:-webkit-autofill,
-                        &:-webkit-autofill:hover,
-                        &:-webkit-autofill:focus,
-                        &:-webkit-autofill:active {
-                            -webkit-box-shadow: none !important;
-                        }
                         &:-webkit-autofill {
                             -webkit-text-fill-color: white !important;
                         }

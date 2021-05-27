@@ -38,3 +38,12 @@ function checkDataSrc (elem) {
     }
     return false;
 }
+
+// document.addEventListener('DOMloaded', function () {
+//     const iframe = elem.getElementsByTagName("iframe")[0];
+//     const dataSrc = iframe.getAttribute('data-src');
+//     if(!!dataSrc) {
+//         iframe.setAttribute('src', dataSrc);
+//         iframe.removeAttribute('data-src');
+//     }
+// });
