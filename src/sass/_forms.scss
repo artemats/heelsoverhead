@@ -118,3 +118,9 @@ small.required {
     outline: none;
     height: 48px;
 }
+
+label,
+button,
+a{
+    -webkit-tap-highlight-color: transparent;
+}

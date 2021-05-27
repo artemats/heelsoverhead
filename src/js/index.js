@@ -18,7 +18,7 @@ for(let i = 0; i < scrollLinks.length; i++) {
         window.scrollTo({
             top: target.offsetTop,
             left: 0,
-            behavior: 'smooth'
+            // behavior: 'smooth'
         });
     });
 }
