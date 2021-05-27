@@ -1,4 +1,4 @@
-// import Pristine from 'pristinejs/dist/pristine';
+import Pristine from 'pristinejs/dist/pristine';
 
 // subscription //
 // const subscriptionForm = document.querySelector('#form_5');

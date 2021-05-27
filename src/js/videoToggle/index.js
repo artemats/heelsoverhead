@@ -40,7 +40,8 @@ function checkDataSrc (elem) {
 }
 
 // document.addEventListener('DOMloaded', function () {
-//     const iframe = elem.getElementsByTagName("iframe")[0];
+//     const div = document.getElementById("player");
+//     const iframe = div.getElementsByTagName("iframe")[0];
 //     const dataSrc = iframe.getAttribute('data-src');
 //     if(!!dataSrc) {
 //         iframe.setAttribute('src', dataSrc);
