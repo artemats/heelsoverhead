@@ -8,13 +8,16 @@ const player = new Plyr(document.querySelector('#player'), {
 const btnPlayPause = document.querySelector('.plyr__control');
 
 inView('#player')
-    .on('enter', function (elem) {
+    .on('enter', function () {
         // controlVideo('playVideo');
-        // player.play();
-        console.log(btnPlayPause);
+        if(!player.play()) {
+            btnPlayPause.click();
+        } else {
+            player.play();
+        }
     })
     .on('exit', function () {
-        controlVideo('pauseVideo');
+        // controlVideo('pauseVideo');
         player.pause();
     });
 

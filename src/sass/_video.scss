@@ -19,6 +19,11 @@
     }
 }
 
-.plyr__video-embed{
-  aspect-ratio: 1/2 !important;
+.plyr{
+  &__video-embed{
+    aspect-ratio: 1/2 !important;
+  }
+  &__control--overlaid{
+    background-color: $color-orange;
+  }
 }
