@@ -886,6 +886,7 @@
         &-3{
             opacity: .3;
             filter: blur(5px);
+            pointer-events: none;
         }
     }
 }
