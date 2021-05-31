@@ -34,4 +34,11 @@ if(!!closeModalBtn) {
     });
 }
 
+// cancel on next step //
+if(!!document.querySelector('.nextstep')) {
+    document.querySelector('.cancel-nextstep').addEventListener('click', function () {
+        document.querySelector('.sub-form').classList.remove('nextstep');
+    });
+}
+
 // console.log(getSubscriberData('Arte', 'arte@gmail.com', 'Vegan, Gluten free', ['Pay']));

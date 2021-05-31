@@ -311,7 +311,7 @@
             <div class="video-box">
 <!--                <div id="player" class="plyr__video-embed">-->
 <!--                    <iframe-->
-<!--                        src="https://www.youtube.com/embed/NYnKRY_ijEc?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1&loop=1&playlist=NYnKRY_ijEc"-->
+<!--                        src="https://www.youtube.com/embed/ppp4DQPlMKI?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1&loop=1&playlist=ppp4DQPlMKI"-->
 <!--                        allowfullscreen-->
 <!--                        allowtransparency-->
 <!--                        allow="autoplay"-->
@@ -323,7 +323,7 @@
                            playsinline
                            webkit-playsinline
                            loop
-                           data-poster="">
+                           data-poster="../img/poster_fitness.jpeg">
                         <source src="../video/Fit_With_Her_21_day_Challenge.webm" type="video/webm" />
                         <source src="../video/Fit_With_Her_21_day_Challenge.mp4" type="video/mp4" />
                     </video>
@@ -346,36 +346,45 @@
                         <div class="section-heading-sub text-sm-center">
                             <h3>Your 21-day fitness challenge <span>for $21 only!</span></h3>
                         </div>
-                        <form class="row" id="form_5">
-                            <div class="col-sub-1">
-                                <div class="sub-wrapper-item item-data text-sm-center">
-                                    Choose your food preferences and get a personalized menu to your email.
+                        <form class="sub-form nextstep" id="form_5">
+                            <div class="sub-nextstep">
+                                <p>You have already registered for the challenge</p>
+                                <div class="sub-nextstep-action">
+                                    <a href="payment_page.html"
+                                            class="btn btn-lg btn-orange">Go to payment</a>
+                                    <button class="btn btn-lg btn-transparent cancel-nextstep">Cancel</button>
                                 </div>
                             </div>
-                            <div class="col-sub-2">
-                                <div class="sub-wrapper-item item-checkbox">
-                                    <div class="checkbox-group">
-                                        <input type="checkbox" id="preference_1" name="regular" checked>
-                                        <label for="preference_1">Regular (no food restrictions)</label>
-                                    </div>
-
-                                    <div class="checkbox-group">
-                                        <input type="checkbox" id="preference_2" name="vegetarian">
-                                        <label for="preference_2">Vegetarian</label>
-                                    </div>
-
-                                    <div class="checkbox-group">
-                                        <input type="checkbox" id="preference_3" name="vegan">
-                                        <label for="preference_3">Vegan</label>
-                                    </div>
-
-                                    <div class="checkbox-group">
-                                        <input type="checkbox" id="preference_4" name="glutenFree">
-                                        <label for="preference_4">Gluten free</label>
+                            <div class="row">
+                                <div class="col-sub-1">
+                                    <div class="sub-wrapper-item item-data text-sm-center">
+                                        Choose your food preferences and get a personalized menu to your email.
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-sub-3">
+                                <div class="col-sub-2">
+                                    <div class="sub-wrapper-item item-checkbox">
+                                        <div class="checkbox-group">
+                                            <input type="checkbox" id="preference_1" name="regular" checked>
+                                            <label for="preference_1">Regular (no food restrictions)</label>
+                                        </div>
+
+                                        <div class="checkbox-group">
+                                            <input type="checkbox" id="preference_2" name="vegetarian">
+                                            <label for="preference_2">Vegetarian</label>
+                                        </div>
+
+                                        <div class="checkbox-group">
+                                            <input type="checkbox" id="preference_3" name="vegan">
+                                            <label for="preference_3">Vegan</label>
+                                        </div>
+
+                                        <div class="checkbox-group">
+                                            <input type="checkbox" id="preference_4" name="glutenFree">
+                                            <label for="preference_4">Gluten free</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sub-3">
                                 <div class="sub-wrapper-item item-subscription text-sm-center">
                                     <div class="form-group">
                                         <input type="text" placeholder="First name" required />
@@ -391,6 +400,7 @@
                                 <div class="form-message">
                                     <p>Success message</p>
                                 </div>
+                            </div>
                             </div>
                         </form>
                     </div>
