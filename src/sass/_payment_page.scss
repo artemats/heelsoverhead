@@ -1,12 +1,10 @@
 .payment-page {
     height: 100%;
-
     &-content {
         //max-width: 480px;
         width: 100%;
         margin: 0 auto;
     }
-
     &-img {
         position: fixed;
         height: 100%;
@@ -44,7 +42,6 @@
             pointer-events: none;
         }
     }
-
     .header {
         position: fixed;
         z-index: 2;
@@ -53,7 +50,6 @@
             position: absolute;
         }
     }
-
     &-container {
         margin: 0 10.3% 0 55.7%;
 
@@ -70,16 +66,14 @@
             padding: 0 30px;
         }
     }
-
     &-wrapper {
         padding: 160px 0;
             &.__success{
                 .payment-page-title{
+                    @extend h2;
                     color: $color-orange;
                     padding-bottom: 15px;
-                        h2{
-                            color: inherit;
-                        }
+                    font-family: $font-sacramento;
                 }
                 @media (min-width: 768px) {
                     min-height: 100vh;
@@ -91,7 +85,6 @@
                 padding: 40px 0;
             }
     }
-
     &-title {
         font-size: 25px;
         line-height: 0.87;
@@ -130,7 +123,6 @@
 }
 
 .payment-tab {
-
     &-title {
         font-family: $font-roboto;
         font-weight: 600;
@@ -138,12 +130,10 @@
         text-transform: uppercase;
         color: $color-black-100;
     }
-
     &-body  {
         padding-top: 15px;
         display: flex;
     }
-
     &-item{
         border-radius: 10px;
         border: 1px solid $color-grey-100;
