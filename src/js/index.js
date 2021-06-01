@@ -35,7 +35,7 @@ if(!!closeModalBtn) {
 }
 
 // cancel on next step //
-if(!!document.querySelector('.nextstep')) {
+if(!!document.querySelector('.cancel-nextstep')) {
     document.querySelector('.cancel-nextstep').addEventListener('click', function () {
         document.querySelector('.sub-form').classList.remove('nextstep');
     });
